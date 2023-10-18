@@ -7,7 +7,7 @@ import { isEmpty } from "./components/Utils";
 
 const App = () => {
   const posts = useSelector((state) => state.postReducer);
-  console.log(posts);
+
   return (
     <div>
       <h1>Extreme</h1>
