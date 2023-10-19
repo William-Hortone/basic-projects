@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import "./style.css";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
 
 const Login = () => {
   const [email, setEmail] = useState();
@@ -18,11 +19,12 @@ const Login = () => {
       .then((res) => {
         console.log(res);
         if (res.data === "success") {
-          console.log("the response is successfully");
+          toast.success("login successful");
           navigate("/");
+        } else {
+          toast.error("login failed");
         }
-      })
-      .catch((err) => console.log(err));
+      });
   };
 
   return (
