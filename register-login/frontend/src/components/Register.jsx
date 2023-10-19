@@ -12,7 +12,7 @@ const Register = () => {
     e.preventDefault();
 
     axios
-      .post("", { pseudo, email, password })
+      .post("http://localhost:3001/register", { pseudo, email, password })
       .then((res) => console.log(res))
       .catch((err) => console.log(err));
   };
@@ -42,8 +42,8 @@ const Register = () => {
             placeholder="Your Password"
             onChange={(e) => setPassword(e.target.value)}
           />
+          <button type="submit">Register</button>
         </form>
-        <button type="submit">Register</button>
         <p>
           Already have an account? <Link to="/login">Login</Link>
         </p>
