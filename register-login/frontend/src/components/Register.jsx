@@ -2,18 +2,24 @@ import React, { useState } from "react";
 import "./style.css";
 import { Link } from "react-router-dom";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 const Register = () => {
   const [pseudo, setPseudo] = useState();
   const [email, setEmail] = useState();
   const [password, setPassword] = useState();
 
+  const navigate = useNavigate();
+
   const handleSubmit = (e) => {
     e.preventDefault();
 
     axios
       .post("http://localhost:3001/register", { pseudo, email, password })
-      .then((res) => console.log(res))
+      .then((res) => {
+        console.log(res);
+        navigate("/login");
+      })
       .catch((err) => console.log(err));
   };
   return (
@@ -35,7 +41,7 @@ const Register = () => {
             placeholder="Your Email"
             onChange={(e) => setEmail(e.target.value)}
           />
-          <label htmlFor="password">PAssword</label>
+          <label htmlFor="password">Password</label>
           <input
             type="password"
             name="password"
