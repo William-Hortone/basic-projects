@@ -5,7 +5,7 @@ import { Description, Team } from "../../containers";
 const About = () => {
   return (
     <div className="app__about">
-      <Navbar title="A Propos" image1={images.aesgc} image2={images.aesgc} />
+      <Navbar title="A Propos" image1={images.img19} image2={images.img17} />
       <Description />
       <Team />
       <Footer />

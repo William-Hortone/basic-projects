@@ -108,13 +108,13 @@ const Header = () => {
           <h2> Gabonais De Chine</h2>
         </div>
         <div className="app__header-container">
-          <div className="container-content container--content1">
+          <div className="container-content  container--content1">
             <div className="content image1"></div>
           </div>
-          <div className="container-content container--content2">
+          <div className="container-content containerC2 container--content2">
             <div className="content image2"></div>
           </div>
-          <div className="container-content container--content3">
+          <div className="container-content containerC3 container--content3">
             <div className="content image3"></div>
           </div>
         </div>

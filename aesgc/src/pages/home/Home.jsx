@@ -1,9 +1,11 @@
 import React from "react";
 import { Footer, Header } from "../../components";
+import { Introduction } from "../../containers";
 const Home = () => {
   return (
-    <div>
+    <div className="app__home">
       <Header />
+      <Introduction />
       <Footer />
     </div>
   );

@@ -4,10 +4,7 @@
   display: flex;
   flex-direction: column;
   background-color: #fafafa;
-  overflow-x: hidden;
-  /* position: fixed;
-  top: 0;
-  left: ; */
+  overflow: hidden;
 }
 
 header {
@@ -294,7 +291,7 @@ header {
   .app__header-container {
     height: 80%;
   }
-  .container--content2 {
+  .app__navbar .container--content2 {
     display: none;
   }
   .app__header-menu-container {
@@ -305,7 +302,7 @@ header {
     animation: show-links 0.7s linear forwards;
     animation-delay: 1s;
   }
-  .container--content3 {
+  .app__navbar .container--content3 {
     display: none;
   }
 }
