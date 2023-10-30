@@ -44,7 +44,7 @@ const Footer = () => {
       </div>
       <div className="app__footer-copyright">
         <p>
-          AESGC © 2023 | Developed by
+          AESGC © 2023 | Developed by &nbsp;
           <span>
             <a href="#">William Hortone</a>
           </span>
