@@ -1,47 +1,10 @@
 import { useState } from "react";
-import "./header.css";
+import "./navbar.css";
 import logoImg from "../../assets/logo.jpg";
 import { Link } from "react-router-dom";
-import { FaBars, FaAlignRight, FaTimes } from "react-icons/fa";
+import { FaAlignRight, FaTimes } from "react-icons/fa";
 
-// const Menu = (
-//   <div className="app__header-menu">
-//     <span></span>
-//     <div className="app__header-menu-container">
-//       <div className="close-btn" onClick={handleHideMenu}>
-//         <FaTimes color="white" size={23} />
-//       </div>
-
-//       <ul className="menu-links">
-//         <div className="link-box">
-//           <Link to="/" className="link">
-//             Accueil
-//           </Link>
-//         </div>
-//         <div className="link-box">
-//           <Link to="/about" className="link">
-//             A Propos
-//           </Link>
-//         </div>
-//         <div className="link-box">
-//           <Link to="/gallery" className="link">
-//             Gallerie
-//           </Link>
-//         </div>
-
-//         <div className="link-box">
-//           <Link className="link">Guide d'etude</Link>
-//         </div>
-//         <div className="link-box">
-//           <Link to="/contact" className="link">
-//             Contact
-//           </Link>
-//         </div>
-//       </ul>
-//     </div>
-//   </div>
-// );
-const Header = () => {
+const Navbar = ({ image1, image2, title }) => {
   const [showMenu, setShowMenu] = useState(false);
 
   const handleShowMenu = () => {
@@ -104,18 +67,19 @@ const Header = () => {
       )}
       <div className="app__header-wrapper">
         <div className="container-titles">
-          <h2>communaute </h2>
-          <h2> Gabonais De Chine</h2>
+          <h2 style={{ display: "none" }}>Gabonais </h2>
+          <h2 className="page-title">{title}</h2>
         </div>
         <div className="app__header-container">
           <div className="container-content container--content1">
-            <div className="content image1"></div>
-          </div>
-          <div className="container-content container--content2">
-            <div className="content image2"></div>
+            <div className="content ">
+              <img src={image1} className="image" alt="photo" />
+            </div>
           </div>
           <div className="container-content container--content3">
-            <div className="content image3"></div>
+            <div className="content ">
+              <img src={image2} className="image" alt="photo" />
+            </div>
           </div>
         </div>
       </div>
@@ -123,4 +87,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default Navbar;

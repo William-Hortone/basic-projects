@@ -1,0 +1,48 @@
+.app__description {
+  width: 100%;
+  height: 100vh;
+  background: var(--color-secondary);
+  z-index: 11;
+  display: flex;
+  gap: 4rem;
+  /* flex-direction: column; */
+  padding: 4rem;
+}
+
+.app__description-image {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.app__description-image_img {
+  /* width: 80%; */
+  height: 92%;
+  aspect-ratio: 1/1;
+  background: url("../../assets/1.jpg");
+  background-size: cover;
+  background-position: top center;
+}
+.app__description-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  /* justify-content: center; */
+}
+.app__description-container div {
+}
+.app__description-container div h2 {
+  font-size: 2rem;
+  font-family: var(--font-base);
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.app__description-container div p,
+.app__description-container div ul li {
+  font-size: 20px;
+  /* font-family: var(--font-base); */
+  /* font-weight: 600; */
+  margin-bottom: 1rem;
+  color: #ffff;
+}
