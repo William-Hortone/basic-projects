@@ -9,14 +9,14 @@
   width: 100%;
   height: auto;
   background-color: #f3f5f5;
-  padding: 4rem 8rem;
+  padding: 8rem;
 }
 .intro-title {
   font-size: 3.5rem;
   font-family: var(--font-base);
   font-weight: 600;
   text-align: center;
-  margin-bottom: 4rem;
+  margin-bottom: 6rem;
 }
 .app__intro-desc-wrapper {
   width: 100%;
@@ -35,9 +35,10 @@
 .app__introduction-container {
   width: 100%;
   height: auto;
+  min-height: 100vh;
   display: flex;
   background-color: var(--color-secondary);
-  padding: 6rem 8rem;
+  padding: 8rem;
   gap: 3rem;
 }
 .intro-container-text {

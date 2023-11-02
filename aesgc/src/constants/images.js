@@ -19,6 +19,9 @@ import img18 from "../assets/18.jpg";
 import img19 from "../assets/19.jpg";
 import img20 from "../assets/20.jpg";
 import foot from "../assets/foot.jpg";
+import passport from "../assets/passeport.png";
+import anbg from "../assets/anbg.jpg";
+import flag from "../assets/Flagpng.png";
 
 export default {
   aesgc,
@@ -42,4 +45,7 @@ export default {
   img18,
   img19,
   img20,
+  passport,
+  flag,
+  anbg,
 };
