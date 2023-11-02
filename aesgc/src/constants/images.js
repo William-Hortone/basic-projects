@@ -18,6 +18,17 @@ import img17 from "../assets/17.jpg";
 import img18 from "../assets/18.jpg";
 import img19 from "../assets/19.jpg";
 import img20 from "../assets/20.jpg";
+import img21 from "../assets/21.jpg";
+import img22 from "../assets/22.jpeg";
+import img23 from "../assets/23.jpeg";
+import img24 from "../assets/24.jpeg";
+import img25 from "../assets/25.jpeg";
+import img26 from "../assets/26.jpeg";
+import img27 from "../assets/27.jpeg";
+import img28 from "../assets/28.jpeg";
+import img29 from "../assets/29.jpeg";
+import img30 from "../assets/30.jpeg";
+import img31 from "../assets/31.jpeg";
 import foot from "../assets/foot.jpg";
 import passport from "../assets/passeport.png";
 import anbg from "../assets/anbg.jpg";
@@ -45,6 +56,17 @@ export default {
   img18,
   img19,
   img20,
+  img21,
+  img22,
+  img23,
+  img24,
+  img25,
+  img26,
+  img27,
+  img28,
+  img29,
+  img30,
+  img31,
   passport,
   flag,
   anbg,

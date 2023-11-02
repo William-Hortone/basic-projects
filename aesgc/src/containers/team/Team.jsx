@@ -25,7 +25,9 @@ const Team = () => {
         >
           <div className="slide">
             <div className="app__team-container">
-              <h2>Bureau Executif</h2>
+              <h2>
+                Bureau Executif <span> 2023-2024 </span>
+              </h2>
 
               <div className="wrapper">
                 <div className="wrapper-box">
@@ -118,7 +120,9 @@ const Team = () => {
 
           <div className="slide">
             <div className="app__team-container">
-              <h2>Precedent Executif</h2>
+              <h2>
+                Precedent Burreau <span> 2022-2023 </span>
+              </h2>
 
               <div className="wrapper">
                 <div className="wrapper-box">

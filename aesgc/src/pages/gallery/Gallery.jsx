@@ -7,7 +7,7 @@ import "./gallery.css";
 const Gallery = () => {
   return (
     <div>
-      <Navbar title="Gallerie" image1={images.aesgc} image2={images.aesgc} />
+      <Navbar title="Gallerie" image1={images.img19} image2={images.img17} />
       <GalleryImage />
     </div>
   );
