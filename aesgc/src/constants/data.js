@@ -96,13 +96,29 @@ let data = [
     id: 23,
     imgSrc: images.img29,
   },
-  {
-    id: 24,
-    imgSrc: images.img38,
-  },
+  // {
+  //   id: 24,
+  //   imgSrc: images.img30,
+  // },
   {
     id: 25,
     imgSrc: images.img31,
+  },
+  {
+    id: 26,
+    imgSrc: images.img32,
+  },
+  {
+    id: 27,
+    imgSrc: images.img33,
+  },
+  {
+    id: 28,
+    imgSrc: images.img34,
+  },
+  {
+    id: 29,
+    imgSrc: images.img35,
   },
 ];
 

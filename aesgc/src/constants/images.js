@@ -29,6 +29,10 @@ import img28 from "../assets/28.jpeg";
 import img29 from "../assets/29.jpeg";
 import img30 from "../assets/30.jpeg";
 import img31 from "../assets/31.jpeg";
+import img32 from "../assets/32.jpeg";
+import img33 from "../assets/33.jpeg";
+import img34 from "../assets/34.jpeg";
+import img35 from "../assets/35.jpeg";
 import foot from "../assets/foot.jpg";
 import passport from "../assets/passeport.png";
 import anbg from "../assets/anbg.jpg";
@@ -67,6 +71,10 @@ export default {
   img29,
   img30,
   img31,
+  img32,
+  img33,
+  img34,
+  img35,
   passport,
   flag,
   anbg,

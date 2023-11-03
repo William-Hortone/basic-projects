@@ -1,0 +1,64 @@
+.app__contactForm {
+  width: 100%;
+  height: auto;
+  display: flex;
+  background-color: var(--color-secondary);
+  padding: 4rem;
+  gap: 4rem;
+}
+.app__contactFrom-section {
+  flex: 1;
+}
+
+.app__contactFrom-section form {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 0 2rem;
+}
+.app__contactFrom-section form label {
+  font-size: 1.1rem;
+  padding: 0.3rem 0;
+}
+.app__contactFrom-section form input {
+  width: 100%;
+  height: 50px;
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 7px;
+  border: none;
+  margin-bottom: 1rem;
+}
+.app__contactFrom-section form textarea {
+  width: 100%;
+  height: 200px;
+  border-radius: 7px;
+  padding: 0.5rem;
+}
+.submit-btn {
+  padding: 1rem;
+  margin-top: 20px;
+  border-radius: 7px;
+  border: none;
+  background-color: var(--color-blue);
+  color: #fff;
+  font-weight: 900;
+}
+.app__contactFrom-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+.app__contactFrom-section p {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.app__contactFrom-section h2:nth-of-type(2) {
+  font-size: 2.5rem;
+  margin-top: 2rem;
+}
+.contact-infos {
+  margin-left: 4rem;
+}
