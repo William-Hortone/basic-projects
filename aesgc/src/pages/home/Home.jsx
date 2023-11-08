@@ -1,6 +1,6 @@
 import React from "react";
 import { Footer, Header } from "../../components";
-import { Introduction, Websites } from "../../containers";
+import { Introduction, Sponsor, Websites } from "../../containers";
 import "./home.css";
 
 const Home = () => {
@@ -12,7 +12,7 @@ const Home = () => {
         <h2>Sites Essentiels</h2>
         <Websites />
       </div>
-      {/* <Sponsor /> */}
+      <div className="app__home-sponsor">{/* <Sponsor /> */}</div>
       <Footer />
     </div>
   );

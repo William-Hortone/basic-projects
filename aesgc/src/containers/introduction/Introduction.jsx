@@ -1,14 +1,19 @@
-import React from "react";
 import "./introduction.css";
 import images from "../../constants/images";
 
+import { motion } from "framer-motion";
+import { useScroll, useTransform } from "framer-motion";
+
 const Introduction = () => {
+  const { scrollYProgress } = useScroll();
+  const x = useTransform(scrollYProgress, [0, 1], [0, -1100]);
   return (
     <div className="app__introduction">
       <div className="app__intro-desc">
-        <h2 className="intro-title">
+        <motion.h2 style={{ x }} className="intro-title">
           ASSOCIATION DES ETUDIANTS ET STAGIAIRES GABONAIS EN CHINE
-        </h2>
+        </motion.h2>
+
         <div className="app__intro-desc-wrapper">
           <div className="desc-wrapper-content">
             <h2>Description</h2>

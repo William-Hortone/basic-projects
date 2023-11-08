@@ -119,6 +119,9 @@ header {
     opacity: 1;
   }
 }
+.container-titles h2 span {
+  font-size: 0.7rem;
+}
 .app__header-container {
   width: 100%;
   height: 100%;

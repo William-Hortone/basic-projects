@@ -104,7 +104,9 @@ const Header = () => {
       )}
       <div className="app__header-wrapper">
         <div className="container-titles">
-          <h2>communaute </h2>
+          <h2>
+            communaute <span>Des</span>
+          </h2>
           <h2> Gabonais De Chine</h2>
         </div>
         <div className="app__header-container">

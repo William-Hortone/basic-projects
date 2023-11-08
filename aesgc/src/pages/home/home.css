@@ -35,6 +35,11 @@
   transform: translateX(-50%);
   background: var(--color-secondary);
 }
+.app__home-sponsor {
+  width: 500px;
+  height: 300px;
+  background: red;
+}
 
 @media screen and (max-width: 1200px) {
   .app__home-websites h2 {
