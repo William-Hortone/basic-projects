@@ -1,21 +1,29 @@
 .important-web {
   width: 85%;
-  height: auto;
+  height: 100vh;
   display: flex;
+  align-items: center;
   gap: 1.2rem;
   margin: 0 auto;
+  background-color: aquamarine;
+  position: relative;
 }
 .important-web-section {
   width: 30% !important;
-  aspect-ratio: 1/1;
+  height: 300px;
+  /* aspect-ratio: 1/1; */
   flex: 1;
   border-radius: 10px;
   position: relative;
-  overflow: hidden;
+  /* overflow: hidden; */
+  transition: all 2s ease-in-out;
 }
 .important-web-section-box {
   width: 100%;
   height: 100%;
+
+  transition: all 2s ease-in-out;
+  /* background-color: red; */
 }
 
 .important-web-section img {
@@ -23,6 +31,7 @@
   height: 100%;
   object-fit: cover;
   transition: transform 0.3s linear;
+  border-radius: 7px;
 }
 .important-web-section:hover img {
   transform: scale(1.05);
@@ -61,6 +70,30 @@
   font-weight: 500;
   color: #fff;
 }
+
+/* Add your CSS to style the components */
+/* .important-web {
+  display: flex;
+  flex-direction: column;
+}
+
+.important-web-section {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.important-web-section-box {
+  display: flex;
+  align-items: center;
+}
+
+.web-section-desc {
+  margin-left: 20px;
+} */
+
+/* Add more CSS for styling as needed */
 
 @media screen and (max-width: 758px) {
   .important-web {
