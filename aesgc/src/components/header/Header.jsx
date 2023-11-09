@@ -4,43 +4,6 @@ import logoImg from "../../assets/logo.jpg";
 import { Link } from "react-router-dom";
 import { FaBars, FaAlignRight, FaTimes } from "react-icons/fa";
 
-// const Menu = (
-//   <div className="app__header-menu">
-//     <span></span>
-//     <div className="app__header-menu-container">
-//       <div className="close-btn" onClick={handleHideMenu}>
-//         <FaTimes color="white" size={23} />
-//       </div>
-
-//       <ul className="menu-links">
-//         <div className="link-box">
-//           <Link to="/" className="link">
-//             Accueil
-//           </Link>
-//         </div>
-//         <div className="link-box">
-//           <Link to="/about" className="link">
-//             A Propos
-//           </Link>
-//         </div>
-//         <div className="link-box">
-//           <Link to="/gallery" className="link">
-//             Gallerie
-//           </Link>
-//         </div>
-
-//         <div className="link-box">
-//           <Link className="link">Guide d'etude</Link>
-//         </div>
-//         <div className="link-box">
-//           <Link to="/contact" className="link">
-//             Contact
-//           </Link>
-//         </div>
-//       </ul>
-//     </div>
-//   </div>
-// );
 const Header = () => {
   const [showMenu, setShowMenu] = useState(false);
 

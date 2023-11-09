@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "./galleryImage.css";
-import images from "../../constants/images";
+
 import { FaTimes } from "react-icons/fa";
 import data from "../../constants/data";
 
@@ -15,6 +15,7 @@ const GalleryImage = () => {
   const handleCloseImage = () => {
     setModel(false);
   };
+
   return (
     <>
       <div className={model ? "model showModel" : "model"}>
