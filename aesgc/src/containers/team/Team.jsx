@@ -32,7 +32,7 @@ const Team = () => {
               <div className="wrapper">
                 <div className="wrapper-box">
                   <div className="wrapper-box-image">
-                    <img src={images.img2} alt="photo" />
+                    <img src={images.bureau5} alt="photo" />
                   </div>
                   <h3>Président</h3>
                   <p>ESLI OTHNIEL LOUNDOU</p>
@@ -121,104 +121,104 @@ const Team = () => {
           <div className="slide">
             <div className="app__team-container">
               <h2>
-                Precedent Burreau <span> 2022-2023 </span>
+                Précedent Burreau <span> 2022-2023 </span>
               </h2>
 
               <div className="wrapper">
                 <div className="wrapper-box">
                   <div className="wrapper-box-image">
-                    <img src={images.img2} alt="photo" />
+                    <img src={images.bureau6} alt="photo" />
                   </div>
                   <h3>Présidente</h3>
                   <p>AVOME MBA Marossia</p>
                 </div>
                 <div className="wrapper-box">
                   <div className="wrapper-box-image">
-                    <img src={images.img2} alt="photo" />
+                    <img src={images.bureau18} alt="photo" />
                   </div>
                   <h3>Vice Président</h3>
                   <p>OSSOUGOU-OYAMA Devlin Zion</p>
                 </div>
                 <div className="wrapper-box">
                   <div className="wrapper-box-image">
-                    <img src={images.img2} alt="photo" />
+                    <img src={images.bureau16} alt="photo" />
                   </div>
                   <h3>Sécretaire géneral</h3>
                   <p>TATY MBOUMBA Shimri Kades</p>
                 </div>
                 <div className="wrapper-box">
                   <div className="wrapper-box-image">
-                    <img src={images.img2} alt="photo" />
+                    <img src={images.bureau8} alt="photo" />
                   </div>
                   <h3>Sécretaire génerale adjoint</h3>
                   <p>NGUEMBI INES Pamela</p>
                 </div>
                 <div className="wrapper-box">
                   <div className="wrapper-box-image">
-                    <img src={images.img2} alt="photo" />
+                    <img src={images.bureau7} alt="photo" />
                   </div>
                   <h3>Commissaire aux comptes</h3>
                   <p>NDJIMY SANI Rayann</p>
                 </div>
                 <div className="wrapper-box">
                   <div className="wrapper-box-image">
-                    <img src={images.img2} alt="photo" />
+                    <img src={images.bureau1} alt="photo" />
                   </div>
                   <h3>Commissaire aux comptes adjointe</h3>
                   <p>IMALET AKENDENGUE Irene</p>
                 </div>
                 <div className="wrapper-box">
                   <div className="wrapper-box-image">
-                    <img src={images.img2} alt="photo" />
+                    <img src={images.bureau9} alt="photo" />
                   </div>
                   <h3>Trésorière</h3>
                   <p>BAYEMI Elisabeth</p>
                 </div>
                 <div className="wrapper-box">
                   <div className="wrapper-box-image">
-                    <img src={images.img2} alt="photo" />
+                    <img src={images.bureau3} alt="photo" />
                   </div>
                   <h3>Chargé des affaires sociales</h3>
                   <p>NZIENGUI RABY Randy Bachelard</p>
                 </div>
                 <div className="wrapper-box">
                   <div className="wrapper-box-image">
-                    <img src={images.img2} alt="photo" />
+                    <img src={images.bureau13} alt="photo" />
                   </div>
                   <h3>Conseiller strategique sociale </h3>
                   <p>EDZANGO BAYABI ENGO Dorisse</p>
                 </div>
                 <div className="wrapper-box">
                   <div className="wrapper-box-image">
-                    <img src={images.img2} alt="photo" />
+                    <img src={images.bureau5} alt="photo" />
                   </div>
                   <h3>Conseiller stratégique en projet 1</h3>
                   <p>ESLI OTHNIEL LOUNDOU</p>
                 </div>
                 <div className="wrapper-box">
                   <div className="wrapper-box-image">
-                    <img src={images.img2} alt="photo" />
+                    <img src={images.bureau15} alt="photo" />
                   </div>
                   <h3>Conseiller strategique en projet 2</h3>
                   <p>ABEME MBA Valencia</p>
                 </div>
                 <div className="wrapper-box">
                   <div className="wrapper-box-image">
-                    <img src={images.img2} alt="photo" />
+                    <img src={images.bureau14} alt="photo" />
                   </div>
                   <h3>Chargé des organisatons</h3>
                   <p>EYEBE LENDOYE Ken Cemich</p>
                 </div>
                 <div className="wrapper-box">
                   <div className="wrapper-box-image">
-                    <img src={images.img2} alt="photo" />
+                    <img src={images.bureau10} alt="photo" />
                   </div>
                   <h3>Chargé de la communication</h3>
                   <p>ADOU OVOLO Monique Lauriane</p>
                 </div>
                 <div className="wrapper-box">
                   <div className="wrapper-box-image">
-                    <img src={images.img2} alt="photo" />
+                    <img src={images.bureau11} alt="photo" />
                   </div>
                   <h3>Chargé Culturelle et des délégués</h3>
                   <p>MENGUE DALYBEA</p>

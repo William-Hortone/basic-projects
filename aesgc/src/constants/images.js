@@ -33,6 +33,25 @@ import img32 from "../assets/32.jpeg";
 import img33 from "../assets/33.jpeg";
 import img34 from "../assets/34.jpeg";
 import img35 from "../assets/35.jpeg";
+import bureau1 from "../assets/bureau1.jpg";
+import bureau2 from "../assets/bureau2.jpg";
+import bureau3 from "../assets/bureau3.jpg";
+import bureau4 from "../assets/bureau4.jpg";
+import bureau5 from "../assets/bureau5.jpg";
+import bureau6 from "../assets/bureau6.jpg";
+import bureau7 from "../assets/bureau7.jpg";
+import bureau8 from "../assets/bureau8.jpg";
+import bureau9 from "../assets/bureau9.jpg";
+import bureau10 from "../assets/bureau10.jpg";
+import bureau11 from "../assets/bureau11.jpg";
+import bureau12 from "../assets/bureau12.jpg";
+import bureau13 from "../assets/bureau13.jpg";
+import bureau14 from "../assets/bureau14.jpg";
+import bureau15 from "../assets/bureau15.jpg";
+import bureau16 from "../assets/bureau16.jpg";
+import bureau17 from "../assets/bureau17.jpg";
+import bureau18 from "../assets/bureau18.jpg";
+// import bureau19 from '../assets/bureau1.jpg';
 import foot from "../assets/foot.jpg";
 import passport from "../assets/passeport.png";
 import anbg from "../assets/anbg.jpg";
@@ -78,4 +97,22 @@ export default {
   passport,
   flag,
   anbg,
+  bureau1,
+  bureau2,
+  bureau3,
+  bureau4,
+  bureau5,
+  bureau6,
+  bureau7,
+  bureau8,
+  bureau9,
+  bureau10,
+  bureau11,
+  bureau12,
+  bureau13,
+  bureau14,
+  bureau15,
+  bureau16,
+  bureau17,
+  bureau18,
 };

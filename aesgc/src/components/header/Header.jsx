@@ -54,7 +54,9 @@ const Header = () => {
               </div>
 
               <div className="link-box">
-                <Link className="link">Guide d'etude</Link>
+                <Link to="/blog" className="link">
+                  Blog
+                </Link>
               </div>
               <div className="link-box">
                 <Link to="/contact" className="link">
