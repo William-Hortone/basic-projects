@@ -8,6 +8,7 @@ import Websites from "./websites/Websites";
 import BlogContainer from "./blogContainer/BlogContainer";
 import BlogSideBar from "./blogSideBar/BlogSideBar";
 import BlogContent from "./blogContent/BlogContent";
+import Post from "../components/post/Post";
 
 export {
   Description,
@@ -20,4 +21,5 @@ export {
   BlogContainer,
   BlogSideBar,
   BlogContent,
+  Post,
 };

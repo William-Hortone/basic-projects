@@ -51,7 +51,7 @@ const Introduction = () => {
         <div className="intro-container-image">
           <div className="cardImage">
             <img src={images.img19} alt="photo" />
-            {/* <div></div> */}
+         
           </div>
         </div>
       </div>
