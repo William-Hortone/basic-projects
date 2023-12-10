@@ -1,0 +1,32 @@
+
+
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&display=swap");
+
+@font-face {
+  font-family: "CustomFontFamily";
+  src: url("./fonts/Redwing-Medium.otf") format("truetype");
+  font-weight: 900;
+
+  font-style: normal;
+}
+
+:root {
+  --font-base: "CustomFontFamily", serif;
+  --font-alt: "Open Sans", sans-serif;
+  --color-blue: #1c293e;
+  --color-white: #ffffff;
+  --color-black: #0c0c0c;
+  --color-primary: #e7e4df;
+  --color-secondary: #03a9f4;
+}
+body {
+  background-color: #e9e9e9;
+  overflow-x: hidden !important;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
