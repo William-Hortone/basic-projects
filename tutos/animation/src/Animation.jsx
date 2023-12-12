@@ -24,7 +24,6 @@ const Animation = () => {
   };
 
   const handleMouseMove = (e) => {
-    // console.log("verticalOffset is", verticalOffset);
     if (dragging) {
       const deltaY = e.clientY - dragStartY;
       setVerticalOffset(initialOffset + deltaY);

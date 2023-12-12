@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from "react";
-import { FaPlus } from "react-icons/fa";
+import React, { useEffect, useState } from "react";
+
 const TypingAnimation = ({ text }) => {
   const [visibleText, setVisibleText] = useState("");
 
@@ -28,9 +28,11 @@ const TypingAnimation = ({ text }) => {
 
   return (
     <div className="text">
-      <div className="visibleText">
-        {visibleText}
-        {/* <span className="plus"></span> */}
+      <div className="visibleTextContainer">
+        <div className="visibleText">
+          {visibleText}
+          <span className="bar">|</span>
+        </div>
       </div>
     </div>
   );
