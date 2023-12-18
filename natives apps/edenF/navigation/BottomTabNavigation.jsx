@@ -22,7 +22,7 @@ const screenOptions = {
 
 const BottomTabNavigation = () => {
   return (
-    <Tab.Navigator>
+    <Tab.Navigator screenOptions={screenOptions}>
       <Tab.Screen
         name="Home"
         component={Home}
