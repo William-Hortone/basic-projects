@@ -5,6 +5,8 @@ import * as SplashScreen from "expo-splash-screen";
 import { useCallback } from "react";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import { Cart, Home, OnBoarding } from "./screens";
+import BottomTabNavigation from "./navigation/BottomTabNavigation";
 
 const Stack = createNativeStackNavigator();
 
@@ -30,8 +32,31 @@ export default function App() {
   console.log("fontsLoader:", fontsLoader);
 
   return (
-    <View>
-      <Text> HELLO hortone</Text>
-    </View>
+    <NavigationContainer>
+      <Stack.Navigator>
+        {/* <Stack.Screen
+          name="Bottom Navigation"
+          component={BottomTabNavigation}
+          options={{ headerShown: false }}
+        /> */}
+        <Stack.Screen
+          name="OnBoarding"
+          component={OnBoarding}
+          options={{ headerShown: false }}
+        />
+        {/* <Stack.Screen
+          name="Cart"
+          component={Cart}
+          options={{ headerShown: false }}
+        /> */}
+      </Stack.Navigator>
+    </NavigationContainer>
   );
 }
+
+const styles = StyleSheet.create({
+  text: {
+    fontFamily: "bold",
+    fontSize: 20,
+  },
+});
