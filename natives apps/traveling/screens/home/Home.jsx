@@ -8,7 +8,7 @@ import {
 import React from "react";
 import styles from "./home.style";
 import { Ionicons, Fontisto } from "@expo/vector-icons";
-import { Welcome } from "../../components";
+// import { Welcome } from "../../components";
 
 const Home = () => {
   return (
@@ -28,9 +28,9 @@ const Home = () => {
         </View>
       </View>
 
-      <ScrollView>
+      {/* <ScrollView>
         <Welcome />
-      </ScrollView>
+      </ScrollView> */}
     </SafeAreaView>
   );
 };
