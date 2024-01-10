@@ -17,7 +17,6 @@ export default function App() {
     bold: require("./assets/fonts/bold.otf"),
     medium: require("./assets/fonts/medium.otf"),
     extrabold: require("./assets/fonts/xtrabold.otf"),
-    // semibold: require("./assets/fonts/"),
   });
 
   const onLayoutRootView = useCallback(async () => {
@@ -34,21 +33,16 @@ export default function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator>
-        {/* <Stack.Screen
-          name="Bottom Navigation"
-          component={BottomTabNavigation}
-          options={{ headerShown: false }}
-        /> */}
         <Stack.Screen
           name="OnBoarding"
           component={OnBoarding}
           options={{ headerShown: false }}
         />
-        {/* <Stack.Screen
-          name="Cart"
-          component={Cart}
+        <Stack.Screen
+          name="Bottom"
+          component={BottomTabNavigation}
           options={{ headerShown: false }}
-        /> */}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );
