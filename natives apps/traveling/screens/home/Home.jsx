@@ -7,30 +7,30 @@ import {
 } from "react-native";
 import React from "react";
 import styles from "./home.style";
-import { Ionicons, Fontisto } from "@expo/vector-icons";
-// import { Welcome } from "../../components";
+import { Ionicons, AntDesign } from "@expo/vector-icons";
+import reusable from "../../components/reusable/reusable.style";
+import { ReusableText } from "../../components";
+import { SIZES, COLORS } from "../../constants/theme";
+import { useNavigation } from "@react-navigation/native";
 
 const Home = () => {
+  const navigation = useNavigation();
   return (
-    <SafeAreaView>
-      <View style={styles.appBarWrapper}>
-        <View style={styles.appBar}>
-          <Ionicons name="location-outline" size={24} />
-          <Text style={styles.location}> Xuzhou</Text>
-          <View style={{ alignItems: "flex-end" }}>
-            <View style={styles.cartCount}>
-              <Text style={styles.cartNumber}>8</Text>
-            </View>
-            <TouchableOpacity>
-              <Fontisto name="shopping-bag" size={24} />
-            </TouchableOpacity>
-          </View>
-        </View>
+    <SafeAreaView style={reusable.container}>
+      <View style={reusable.rowWithSpace("space-between")}>
+        <ReusableText
+          text={"Hello Hortone"}
+          size={SIZES.large}
+          family={"regular"}
+          color={COLORS.black}
+        />
+        <TouchableOpacity
+          onPress={() => navigation.navigate("search")}
+          style={styles.box}
+        >
+          <AntDesign name="search1" size={26} />
+        </TouchableOpacity>
       </View>
-
-      {/* <ScrollView>
-        <Welcome />
-      </ScrollView> */}
     </SafeAreaView>
   );
 };
