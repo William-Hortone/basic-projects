@@ -1,7 +1,7 @@
-import Home from "./Home";
-import Cart from "./Cart";
-import Profile from "./Profile";
-import Search from "./Search";
+import Home from "./home/Home";
+import Cart from "./cart/Cart";
+import Profile from "./profile/Profile";
+import Search from "./search/Search";
 import ProductDetails from "./ProductDetails";
 
 export { Home, Cart, Profile, Search, ProductDetails };

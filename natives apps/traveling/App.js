@@ -5,19 +5,18 @@ import * as SplashScreen from "expo-splash-screen";
 import { useCallback } from "react";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import { Cart, Home, OnBoarding, Search } from "./screens";
 import BottomTabNavigation from "./navigation/BottomTabNavigation";
-import { Cart } from "./screens";
 
 const Stack = createNativeStackNavigator();
 
 export default function App() {
   const [fontsLoader] = useFonts({
-    regular: require("./assets/fonts/Poppins-Regular.ttf"),
-    light: require("./assets/fonts/Poppins-Light.ttf"),
-    bold: require("./assets/fonts/Poppins-Bold.ttf"),
-    medium: require("./assets/fonts/Poppins-Medium.ttf"),
-    extrabold: require("./assets/fonts/Poppins-ExtraBold.ttf"),
-    semibold: require("./assets/fonts/Poppins-SemiBold.ttf"),
+    regular: require("./assets/fonts/regular.otf"),
+    light: require("./assets/fonts/light.otf"),
+    bold: require("./assets/fonts/bold.otf"),
+    medium: require("./assets/fonts/medium.otf"),
+    extrabold: require("./assets/fonts/xtrabold.otf"),
   });
 
   const onLayoutRootView = useCallback(async () => {
@@ -35,16 +34,28 @@ export default function App() {
     <NavigationContainer>
       <Stack.Navigator>
         <Stack.Screen
-          name="Bottom Navigation"
+          name="OnBoarding"
+          component={OnBoarding}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="Bottom"
           component={BottomTabNavigation}
           options={{ headerShown: false }}
         />
         <Stack.Screen
-          name="Cart"
-          component={Cart}
+          name="search"
+          component={Search}
           options={{ headerShown: false }}
         />
       </Stack.Navigator>
     </NavigationContainer>
   );
 }
+
+const styles = StyleSheet.create({
+  text: {
+    fontFamily: "bold",
+    fontSize: 20,
+  },
+});
