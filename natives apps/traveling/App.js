@@ -38,6 +38,11 @@ export default function App() {
           component={OnBoarding}
           options={{ headerShown: false }}
         />
+        <Stack.Screen
+          name="Bottom"
+          component={BottomTabNavigation}
+          options={{ headerShown: false }}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );

@@ -33,5 +33,3 @@ const OnBoarding = () => {
 };
 
 export default OnBoarding;
-
-const styles = StyleSheet.create({});
