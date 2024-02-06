@@ -9,7 +9,12 @@ import React from "react";
 import styles from "./home.style";
 import { Ionicons, AntDesign } from "@expo/vector-icons";
 import reusable from "../../components/reusable/reusable.style";
-import { ReusableText } from "../../components";
+import {
+  HeightSpacer,
+  PLaces,
+  Recommendation,
+  ReusableText,
+} from "../../components";
 import { SIZES, COLORS } from "../../constants/theme";
 import { useNavigation } from "@react-navigation/native";
 
@@ -17,19 +22,36 @@ const Home = () => {
   const navigation = useNavigation();
   return (
     <SafeAreaView style={reusable.container}>
-      <View style={reusable.rowWithSpace("space-between")}>
+      <View>
+        <View style={reusable.rowWithSpace("space-between")}>
+          <ReusableText
+            text={"Hi Hortone !"}
+            family={"regular"}
+            size={SIZES.large}
+            color={COLORS.black}
+          />
+          <TouchableOpacity
+            style={styles.box}
+            onPress={() => navigation.navigate("search")}
+          >
+            <AntDesign name="search1" size={26} />
+          </TouchableOpacity>
+        </View>
+
+        <HeightSpacer height={SIZES.large} />
+
         <ReusableText
-          text={"Hello Hortone"}
+          text={"Places"}
+          family={"medium"}
           size={SIZES.large}
-          family={"regular"}
           color={COLORS.black}
         />
-        <TouchableOpacity
-          onPress={() => navigation.navigate("search")}
-          style={styles.box}
-        >
-          <AntDesign name="search1" size={26} />
-        </TouchableOpacity>
+
+        <PLaces />
+
+        <HeightSpacer height={15} />
+
+        <Recommendation />
       </View>
     </SafeAreaView>
   );

@@ -1,5 +1,5 @@
-import { StyleSheet, Text, View, FlatList } from "react-native";
 import React from "react";
+import { FlatList } from "react-native";
 import Slides from "../../components/slides/Slides";
 
 const OnBoarding = () => {
@@ -22,16 +22,14 @@ const OnBoarding = () => {
   ];
   return (
     <FlatList
-      pagingEnabled
-      horizontal
       data={slides}
-      renderItem={({ item }) => <Slides item={item} />}
-      showsHorizontalScrollIndicator={false}
       keyExtractor={(item) => item.id}
+      renderItem={({ item }) => <Slides item={item} />}
+      horizontal
+      pagingEnabled
+      showsHorizontalScrollIndicator={false}
     />
   );
 };
 
 export default OnBoarding;
-
-const styles = StyleSheet.create({});

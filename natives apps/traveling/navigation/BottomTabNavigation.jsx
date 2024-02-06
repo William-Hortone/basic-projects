@@ -8,12 +8,12 @@ import { COLORS } from "../constants";
 const Tab = createBottomTabNavigator();
 const tabBarStyle = {
   position: "absolute",
+  height: 80,
   bottom: 20,
-  right: 20,
-  left: 20,
+  left: 0,
+  right: 0,
   borderRadius: 20,
-  padding: 20,
-  height: 70,
+  // padding: 20,
 };
 
 const BottomTabNavigation = () => {
@@ -21,8 +21,9 @@ const BottomTabNavigation = () => {
     <Tab.Navigator
       initialRouteName="Home"
       activeColor="#EB6A58"
-      inactiveColor="#3e2465"
       tabBarHideKeyBoard={true}
+      headerShown={false}
+      inactiveColor="#3e2465"
       barStyle={{ paddingBottom: 48 }}
     >
       <Tab.Screen
@@ -35,33 +36,21 @@ const BottomTabNavigation = () => {
           tabBarIcon: ({ focused }) => {
             return (
               <Ionicons
-                name={focused ? "home" : "home-outline"}
-                color={focused ? COLORS.primary : COLORS.gray2}
-                size={24}
+                name={focused ? "grid" : "grid-outline"}
+                color={focused ? COLORS.red : COLORS.gray}
+                size={26}
               />
             );
           },
         }}
       />
       <Tab.Screen
-        name="location"
-        component={Location}
-        options={{
-          tabBarIcon: ({ focused }) => {
-            return (
-              <Ionicons
-                name={focused ? "location" : "location-outline"}
-                color={focused ? COLORS.primary : COLORS.gray2}
-                size={24}
-              />
-            );
-          },
-        }}
-      />
-      <Tab.Screen
-        name="chat"
+        name="Chat"
         component={Chat}
         options={{
+          tabBarStyle: tabBarStyle,
+          tabBarShowLabel: false,
+          headerShown: false,
           tabBarIcon: ({ focused }) => {
             return (
               <Ionicons
@@ -70,24 +59,44 @@ const BottomTabNavigation = () => {
                     ? "chatbubble-ellipses"
                     : "chatbubble-ellipses-outline"
                 }
-                color={focused ? COLORS.primary : COLORS.gray2}
-                size={24}
+                color={focused ? COLORS.red : COLORS.gray}
+                size={26}
               />
             );
           },
         }}
       />
-
       <Tab.Screen
-        name="profile"
+        name="Location"
+        component={Location}
+        options={{
+          tabBarStyle: tabBarStyle,
+          tabBarShowLabel: false,
+          headerShown: false,
+          tabBarIcon: ({ focused }) => {
+            return (
+              <Ionicons
+                name={focused ? "location" : "location-outline"}
+                color={focused ? COLORS.red : COLORS.gray}
+                size={26}
+              />
+            );
+          },
+        }}
+      />
+      <Tab.Screen
+        name="Profile"
         component={Profile}
         options={{
+          tabBarStyle: tabBarStyle,
+          tabBarShowLabel: false,
+          headerShown: false,
           tabBarIcon: ({ focused }) => {
             return (
               <Ionicons
                 name={focused ? "person" : "person-outline"}
-                color={focused ? COLORS.primary : COLORS.gray2}
-                size={24}
+                color={focused ? COLORS.red : COLORS.gray}
+                size={26}
               />
             );
           },

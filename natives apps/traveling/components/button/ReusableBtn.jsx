@@ -5,22 +5,16 @@ import { SIZES } from "../../constants";
 const ReusableBtn = ({
   onPress,
   btnText,
+  textColor,
   width,
   bgColor,
   borderWidth,
   borderColor,
-  textColor,
 }) => {
   return (
     <TouchableOpacity
       onPress={onPress}
-      style={styles.btnStyler(
-        width,
-        bgColor,
-        borderWidth,
-        borderColor,
-        textColor
-      )}
+      style={styles.btnStyle(width, bgColor, borderWidth, borderColor)}
     >
       <Text style={styles.btnText(textColor)}>{btnText}</Text>
     </TouchableOpacity>
@@ -35,7 +29,7 @@ const styles = StyleSheet.create({
     fontSize: SIZES.medium,
     color: textColor,
   }),
-  btnStyler: (width, bgColor, borderWidth, borderColor) => ({
+  btnStyle: (width, bgColor, borderWidth, borderColor) => ({
     width: width,
     backgroundColor: bgColor,
     alignItems: "center",
