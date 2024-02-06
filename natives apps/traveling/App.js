@@ -30,7 +30,17 @@ export default function App() {
   }
   console.log("fontsLoader:", fontsLoader);
 
-  return <div>hello william</div>;
+  return (
+    <NavigationContainer>
+      <Stack.Navigator>
+        <Stack.Screen
+          name="Onboard"
+          component={OnBoarding}
+          options={{ headerShown: false }}
+        />
+      </Stack.Navigator>
+    </NavigationContainer>
+  );
 }
 
 const styles = StyleSheet.create({

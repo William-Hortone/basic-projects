@@ -10,7 +10,27 @@ const Slides = ({ item }) => {
 
   return (
     <View>
-      <Text> Slides</Text>
+      <Image source={item.image} style={styles.image} />
+
+      <View style={styles.stack}>
+        <ReusableText
+          text={item.title}
+          color={COLORS.white}
+          size={SIZES.xxLarge}
+          family={"medium"}
+        />
+        <HeightSpacer height={SIZES.small} />
+
+        <ReusableBtn
+          onPress={() => {}}
+          btnText={"Get Started"}
+          width={(SIZES.width - 50) / 2.2}
+          bgColor={COLORS.red}
+          borderColor={COLORS.red}
+          borderWidth={0}
+          textColor={COLORS.white}
+        />
+      </View>
     </View>
   );
 };
