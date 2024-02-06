@@ -6,6 +6,8 @@ import ProductDetails from "./ProductDetails";
 import OnBoarding from "./onBoarding/OnBoarding";
 import Location from "./location/Location";
 import Chat from "./chat/Chat";
+import CountryDetails from "./Details/CountryDetails";
+import Recommended from "./Details/Recommended";
 
 export {
   Home,
@@ -16,4 +18,6 @@ export {
   ProductDetails,
   Location,
   OnBoarding,
+  CountryDetails,
+  Recommended,
 };

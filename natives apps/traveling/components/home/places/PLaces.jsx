@@ -1,8 +1,8 @@
 import { Text, View, VirtualizedList } from "react-native";
 import React, { Component } from "react";
-import HeightSpacer from "../reusable/HeightSpacer";
-import { SIZES } from "../../constants";
-import Country from "../country/Country";
+import HeightSpacer from "../../reusable/HeightSpacer";
+import { SIZES } from "../../../constants";
+import Country from "../../country/Country";
 
 const PLaces = () => {
   countries = [

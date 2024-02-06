@@ -9,7 +9,12 @@ import React from "react";
 import styles from "./home.style";
 import { Ionicons, AntDesign } from "@expo/vector-icons";
 import reusable from "../../components/reusable/reusable.style";
-import { HeightSpacer, PLaces, ReusableText } from "../../components";
+import {
+  HeightSpacer,
+  PLaces,
+  Recommendation,
+  ReusableText,
+} from "../../components";
 import { SIZES, COLORS } from "../../constants/theme";
 import { useNavigation } from "@react-navigation/native";
 
@@ -43,6 +48,10 @@ const Home = () => {
         />
 
         <PLaces />
+
+        <HeightSpacer height={15} />
+
+        <Recommendation />
       </View>
     </SafeAreaView>
   );
