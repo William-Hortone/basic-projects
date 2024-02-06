@@ -1,6 +1,6 @@
 import React from "react";
-import { FlatList, StyleSheet } from "react-native";
-import { Slides } from "../../components";
+import { FlatList } from "react-native";
+import Slides from "../../components/slides/Slides";
 
 const OnBoarding = () => {
   const slides = [

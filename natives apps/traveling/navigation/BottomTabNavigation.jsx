@@ -7,13 +7,13 @@ import { COLORS } from "../constants";
 
 const Tab = createBottomTabNavigator();
 const tabBarStyle = {
-  padding: 20,
-  borderRadius: 20,
-  height: 80,
   position: "absolute",
+  height: 80,
   bottom: 20,
-  left: 20,
-  right: 20,
+  left: 0,
+  right: 0,
+  borderRadius: 20,
+  // padding: 20,
 };
 
 const BottomTabNavigation = () => {

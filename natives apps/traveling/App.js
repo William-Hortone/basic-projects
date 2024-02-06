@@ -43,6 +43,11 @@ export default function App() {
           component={BottomTabNavigation}
           options={{ headerShown: false }}
         />
+        <Stack.Screen
+          name="search"
+          component={Search}
+          options={{ headerShown: false }}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );
