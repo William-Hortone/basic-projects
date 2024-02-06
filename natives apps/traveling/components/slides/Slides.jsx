@@ -10,28 +10,7 @@ const Slides = ({ item }) => {
 
   return (
     <View>
-      <Image style={styles.image} source={item.image} />
-
-      <View style={styles.stack}>
-        <ReusableText
-          text={item.title}
-          size={SIZES.xxLarge}
-          family={"medium"}
-          color={COLORS.white}
-        />
-        <HeightSpacer height={40} />
-        <ReusableBtn
-          onPress={() => {
-            navigation.navigate("Bottom");
-          }}
-          btnText={"Get started"}
-          width={(SIZES.width - 50) / 2.2}
-          bgColor={COLORS.red}
-          borderColor={COLORS.red}
-          borderWidth={0}
-          textColor={COLORS.white}
-        />
-      </View>
+      <Text> Slides</Text>
     </View>
   );
 };

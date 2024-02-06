@@ -16,22 +16,9 @@ import { useNavigation } from "@react-navigation/native";
 const Home = () => {
   const navigation = useNavigation();
   return (
-    <SafeAreaView style={reusable.container}>
-      <View style={reusable.rowWithSpace("space-between")}>
-        <ReusableText
-          text={"Hello Hortone"}
-          size={SIZES.large}
-          family={"regular"}
-          color={COLORS.black}
-        />
-        <TouchableOpacity
-          onPress={() => navigation.navigate("search")}
-          style={styles.box}
-        >
-          <AntDesign name="search1" size={26} />
-        </TouchableOpacity>
-      </View>
-    </SafeAreaView>
+    <View>
+      <Text>Home</Text>
+    </View>
   );
 };
 

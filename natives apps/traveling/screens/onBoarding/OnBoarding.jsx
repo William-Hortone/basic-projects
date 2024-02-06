@@ -21,14 +21,9 @@ const OnBoarding = () => {
     },
   ];
   return (
-    <FlatList
-      pagingEnabled
-      horizontal
-      data={slides}
-      renderItem={({ item }) => <Slides item={item} />}
-      showsHorizontalScrollIndicator={false}
-      keyExtractor={(item) => item.id}
-    />
+    <View>
+      <Text>OnBoarding</Text>
+    </View>
   );
 };
 

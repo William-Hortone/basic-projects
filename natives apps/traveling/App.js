@@ -30,27 +30,7 @@ export default function App() {
   }
   console.log("fontsLoader:", fontsLoader);
 
-  return (
-    <NavigationContainer>
-      <Stack.Navigator>
-        <Stack.Screen
-          name="OnBoarding"
-          component={OnBoarding}
-          options={{ headerShown: false }}
-        />
-        <Stack.Screen
-          name="Bottom"
-          component={BottomTabNavigation}
-          options={{ headerShown: false }}
-        />
-        <Stack.Screen
-          name="search"
-          component={Search}
-          options={{ headerShown: false }}
-        />
-      </Stack.Navigator>
-    </NavigationContainer>
-  );
+  return <div>hello william</div>;
 }
 
 const styles = StyleSheet.create({
