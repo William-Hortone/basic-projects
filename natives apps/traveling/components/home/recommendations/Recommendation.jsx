@@ -74,7 +74,7 @@ const Recommendation = () => {
         style={[reusable.rowWithSpace("space-between"), { paddingBottom: 20 }]}
       >
         <ReusableText
-          text={"Places"}
+          text={"Recommendations"}
           family={"medium"}
           size={SIZES.large}
           color={COLORS.black}
@@ -91,7 +91,10 @@ const Recommendation = () => {
         showsHorizontalScrollIndicator={false}
         contentContainerStyle={{ columnGap: SIZES.medium }}
         renderItem={({ item }) => (
-          <ReusableTile item={item} onPress={() => {}} />
+          <ReusableTile
+            item={item}
+            onPress={() => navigation.navigate("PlaceDetails", item._id)}
+          />
         )}
       />
     </View>

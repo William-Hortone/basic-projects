@@ -10,6 +10,7 @@ import styles from "./home.style";
 import { Ionicons, AntDesign } from "@expo/vector-icons";
 import reusable from "../../components/reusable/reusable.style";
 import {
+  BestHotels,
   HeightSpacer,
   PLaces,
   Recommendation,
@@ -38,7 +39,7 @@ const Home = () => {
           </TouchableOpacity>
         </View>
 
-        <HeightSpacer height={SIZES.large} />
+        <HeightSpacer height={5} />
 
         <ReusableText
           text={"Places"}
@@ -49,9 +50,11 @@ const Home = () => {
 
         <PLaces />
 
+        {/* <HeightSpacer height={15} /> */}
+        <Recommendation />
         <HeightSpacer height={15} />
 
-        <Recommendation />
+        <BestHotels />
       </View>
     </SafeAreaView>
   );

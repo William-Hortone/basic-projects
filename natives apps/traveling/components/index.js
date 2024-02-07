@@ -11,6 +11,8 @@ import Recommendation from "./home/recommendations/Recommendation";
 import PLaces from "./home/places/PLaces";
 import ReusableTile from "./reusable/ReusableTile";
 import Rating from "./reusable/Rating";
+import BestHotels from "./home/BestHotels";
+import HotelCard from "./tiles/hotel/HotelCard";
 
 export {
   ReusableText,
@@ -22,5 +24,7 @@ export {
   Recommendation,
   ReusableTile,
   Rating,
+  BestHotels,
+  HotelCard,
   // NetworkImages,
 };

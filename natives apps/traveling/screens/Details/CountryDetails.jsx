@@ -4,7 +4,7 @@ import { useRoute } from "@react-navigation/native";
 
 const CountryDetails = ({ navigation }) => {
   const route = useRoute();
-  const { item } = route.params;
+  const item = route.params;
   console.log("the item", item);
   return (
     <View>
