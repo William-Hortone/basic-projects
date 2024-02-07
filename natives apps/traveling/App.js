@@ -10,6 +10,7 @@ import {
   CountryDetails,
   Home,
   HotelDetails,
+  HotelSearch,
   HotelsList,
   OnBoarding,
   PlaceDetails,
@@ -81,6 +82,11 @@ export default function App() {
         <Stack.Screen
           name="HotelsList"
           component={HotelsList}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="HotelSearch"
+          component={HotelSearch}
           options={{ headerShown: false }}
         />
       </Stack.Navigator>

@@ -61,12 +61,12 @@ const HotelsList = ({ navigation }) => {
     <SafeAreaView style={{ marginHorizontal: 20 }}>
       <View style={{ height: 50 }}>
         <AppBar
-          title={"Recommendation"}
+          title={"Nearby Hotels"}
           color={COLORS.white}
           color1={COLORS.white}
           icon={"search1"}
           onPress={() => navigation.goBack()}
-          onPress1={() => navigation.navigate("search")}
+          onPress1={() => navigation.navigate("HotelSearch")}
         />
       </View>
 

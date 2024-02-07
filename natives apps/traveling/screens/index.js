@@ -11,6 +11,7 @@ import Recommended from "./Details/Recommended";
 import PlaceDetails from "./Details/PlaceDetails";
 import HotelDetails from "./Details/HotelDetails";
 import HotelsList from "./Details/HotelsList";
+import HotelSearch from "./search/HotelSearch";
 
 export {
   Home,
@@ -26,4 +27,5 @@ export {
   PlaceDetails,
   HotelDetails,
   HotelsList,
+  HotelSearch,
 };
