@@ -23,6 +23,8 @@ const Home = () => {
   const navigation = useNavigation();
   return (
     <SafeAreaView style={reusable.container}>
+      <HeightSpacer height={15} />
+
       <View>
         <View style={reusable.rowWithSpace("space-between")}>
           <ReusableText

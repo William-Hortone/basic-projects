@@ -65,6 +65,9 @@ const HotelsList = ({ navigation }) => {
           color={COLORS.white}
           color1={COLORS.white}
           icon={"search1"}
+          top={20}
+          left={0}
+          right={0}
           onPress={() => navigation.goBack()}
           onPress1={() => navigation.navigate("HotelSearch")}
         />

@@ -14,6 +14,8 @@ import Rating from "./reusable/Rating";
 import BestHotels from "./home/BestHotels";
 import HotelCard from "./tiles/hotel/HotelCard";
 import AppBar from "./reusable/AppBar";
+import DescriptionText from "./reusable/DescriptionText";
+import PopularList from "./country/PopularList";
 
 export {
   ReusableText,
@@ -28,5 +30,7 @@ export {
   BestHotels,
   HotelCard,
   AppBar,
+  DescriptionText,
+  PopularList,
   // NetworkImages,
 };
