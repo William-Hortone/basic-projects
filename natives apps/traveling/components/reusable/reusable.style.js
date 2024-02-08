@@ -11,7 +11,6 @@ const reusable = StyleSheet.create({
     flexDirection: "row",
     alignItems: "center",
     justifyContent: justifyContent,
-    // backgroundColor: "red",
   }),
 });
 
