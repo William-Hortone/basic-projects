@@ -26,7 +26,6 @@ const PlaceDetails = ({ navigation }) => {
   const id = route.params;
   console.log("the yes id is", id);
 
-  // const place = {
   const place = {
     _id: "64d062a3de20d7c932f1f70a",
     country_id: "64c62bfc65af9f8c969a8d04",
@@ -62,7 +61,7 @@ const PlaceDetails = ({ navigation }) => {
       },
     ],
   };
-  // };
+
   return (
     <ScrollView>
       <View>

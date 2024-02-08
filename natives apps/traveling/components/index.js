@@ -16,6 +16,7 @@ import HotelCard from "./tiles/hotel/HotelCard";
 import AppBar from "./reusable/AppBar";
 import DescriptionText from "./reusable/DescriptionText";
 import PopularList from "./country/PopularList";
+import HotelMap from "./tiles/hotel/HotelMap";
 
 export {
   ReusableText,
@@ -32,5 +33,6 @@ export {
   AppBar,
   DescriptionText,
   PopularList,
+  HotelMap,
   // NetworkImages,
 };
