@@ -31,8 +31,10 @@ const HotelDetails = () => {
     rating: 4.8,
     review: "2312 Reviews",
     location: "San Francisco, CA",
-    latitude: 37.7749,
-    longitude: -122.4194,
+    coordinates: {
+      latitude: 37.7749,
+      longitude: -122.4194,
+    },
     price: 400,
     facilities: [
       {
@@ -46,8 +48,8 @@ const HotelDetails = () => {
   let coordinates = {
     id: hotel._id,
     title: hotel.title,
-    latitude: hotel.latitude,
-    longitude: hotel.longitude,
+    latitude: hotel.coordinates.latitude,
+    longitude: hotel.coordinates.longitude,
     latitudeDelta: 0.01,
     longitudeDelta: 0.01,
   };
@@ -145,17 +147,18 @@ const HotelDetails = () => {
 
           <HotelMap coordinates={coordinates} />
 
-          <View style={reusable.rowWithSpace("space-between")}></View>
-          <ReusableText
-            text={"Reviews"}
-            family={"regular"}
-            size={SIZES.large}
-            color={COLORS.black}
-          />
+          <View style={reusable.rowWithSpace("space-between")}>
+            <ReusableText
+              text={"Reviews"}
+              family={"regular"}
+              size={SIZES.large}
+              color={COLORS.black}
+            />
 
-          <TouchableOpacity>
-            <Feather name="list" size={20} />
-          </TouchableOpacity>
+            <TouchableOpacity>
+              <Feather name="list" size={20} />
+            </TouchableOpacity>
+          </View>
         </View>
       </View>
     </ScrollView>
