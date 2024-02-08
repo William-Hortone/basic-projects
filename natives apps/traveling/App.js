@@ -9,7 +9,11 @@ import {
   Cart,
   CountryDetails,
   Home,
+  HotelDetails,
+  HotelSearch,
+  HotelsList,
   OnBoarding,
+  PlaceDetails,
   Recommended,
   Search,
 } from "./screens";
@@ -63,6 +67,26 @@ export default function App() {
         <Stack.Screen
           name="Recommended"
           component={Recommended}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="PlaceDetails"
+          component={PlaceDetails}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="HotelDetails"
+          component={HotelDetails}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="HotelsList"
+          component={HotelsList}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="HotelSearch"
+          component={HotelSearch}
           options={{ headerShown: false }}
         />
       </Stack.Navigator>

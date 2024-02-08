@@ -1,9 +1,14 @@
 import { StyleSheet, View, Text } from "react-native";
 import React from "react";
 
-const ReusableText = ({ text, color, family, size, align }) => {
+const ReusableText = ({ lines, text, color, family, size, align }) => {
   return (
-    <Text style={styles.textStyle(color, family, size, align)}>{text}</Text>
+    <Text
+      numberOfLines={lines}
+      style={styles.textStyle(color, family, size, align)}
+    >
+      {text}
+    </Text>
   );
 };
 

@@ -8,6 +8,10 @@ import Location from "./location/Location";
 import Chat from "./chat/Chat";
 import CountryDetails from "./Details/CountryDetails";
 import Recommended from "./Details/Recommended";
+import PlaceDetails from "./Details/PlaceDetails";
+import HotelDetails from "./Details/HotelDetails";
+import HotelsList from "./Details/HotelsList";
+import HotelSearch from "./search/HotelSearch";
 
 export {
   Home,
@@ -20,4 +24,8 @@ export {
   OnBoarding,
   CountryDetails,
   Recommended,
+  PlaceDetails,
+  HotelDetails,
+  HotelsList,
+  HotelSearch,
 };
