@@ -103,7 +103,7 @@ const Search = ({ navigation }) => {
             <View style={styles.tile}>
               <ReusableTile
                 item={item}
-                onPress={() => navigation.navigation("PlaceDetails", item._id)}
+                onPress={() => navigation.navigate("PlaceDetails", item._id)}
               />
             </View>
           )}

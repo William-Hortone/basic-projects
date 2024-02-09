@@ -15,9 +15,9 @@ const styles = StyleSheet.create({
   },
   input: {
     fontFamily: "regular",
-    width: "90%",
+    width: "100%",
     height: "100%",
-    paddingHorizontal: 50,
+    paddingHorizontal: 30,
     // backgroundColor: "red",
   },
 
