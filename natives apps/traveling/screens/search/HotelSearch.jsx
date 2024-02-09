@@ -8,7 +8,12 @@ import {
   View,
 } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
-import { HeightSpacer, ReusableTile } from "../../components";
+import {
+  AppBar,
+  HeightSpacer,
+  HotelCard,
+  ReusableTile,
+} from "../../components";
 import reusable from "../../components/reusable/reusable.style";
 import { COLORS } from "../../constants";
 import styles from "./search.style";
@@ -69,14 +74,27 @@ const HotelSearch = ({ navigation }) => {
     },
   ];
   return (
-    <SafeAreaView style={reusable.container}>
+    <SafeAreaView>
+      <View style={{ height: 70 }}>
+        <AppBar
+          title={"Look For Hotels"}
+          color={COLORS.white}
+          color1={COLORS.white}
+          icon={"filter"}
+          top={20}
+          left={20}
+          right={20}
+          onPress={() => navigation.goBack()}
+          onPress1={() => navigation.navigate("HotelSearch")}
+        />
+      </View>
       <View style={styles.searchContainer}>
         <View style={styles.searchWrapper}>
           <TextInput
             style={styles.input}
             value={searchKey}
             onChangeText={setSearchKey}
-            placeholder="Where do you want to visit ?"
+            placeholder="Where do you want to stay ?"
           />
         </View>
         <TouchableOpacity style={styles.searchBtn}>
@@ -93,18 +111,21 @@ const HotelSearch = ({ navigation }) => {
           />
         </View>
       ) : (
-        <FlatList
-          data={hotels}
-          keyExtractor={(item) => item._id}
-          renderItem={({ item }) => (
-            <View style={styles.tile}>
-              <ReusableTile
+        <View style={{ paddingLeft: 12 }}>
+          <FlatList
+            data={hotels}
+            keyExtractor={(item) => item._id}
+            numColumns={2}
+            ItemSeparatorComponent={() => <HeightSpacer height={16} />}
+            renderItem={({ item }) => (
+              <HotelCard
+                margin={10}
                 item={item}
                 onPress={() => navigation.navigate("PlaceDetails", item._id)}
               />
-            </View>
-          )}
-        />
+            )}
+          />
+        </View>
       )}
     </SafeAreaView>
   );

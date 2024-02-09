@@ -13,7 +13,7 @@ import reusable from "../../components/reusable/reusable.style";
 import styles from "./search.style";
 import { Feather } from "@expo/vector-icons";
 import { COLORS } from "../../constants";
-import { HeightSpacer, ReusableTile } from "../../components";
+import { AppBar, HeightSpacer, ReusableTile } from "../../components";
 
 const Search = ({ navigation }) => {
   const [searchKey, setSearchKey] = useState("");
@@ -72,7 +72,20 @@ const Search = ({ navigation }) => {
   ];
 
   return (
-    <SafeAreaView style={reusable.container}>
+    <SafeAreaView>
+      <View style={{ height: 70 }}>
+        <AppBar
+          title={"Look For Hotels"}
+          color={COLORS.white}
+          color1={COLORS.white}
+          icon={"filter"}
+          top={20}
+          left={15}
+          right={15}
+          onPress={() => navigation.goBack()}
+          onPress1={() => {}}
+        />
+      </View>
       <View style={styles.searchContainer}>
         <View style={styles.searchWrapper}>
           <TextInput
