@@ -16,6 +16,7 @@ import {
   PlaceDetails,
   Recommended,
   Search,
+  SelectRoom,
 } from "./screens";
 import BottomTabNavigation from "./navigation/BottomTabNavigation";
 

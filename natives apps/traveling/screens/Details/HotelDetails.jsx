@@ -150,7 +150,7 @@ const HotelDetails = ({ navigation }) => {
           />
 
           <HotelMap coordinates={coordinates} />
-          <HeightSpacer height={20} />
+          <HeightSpacer height={30} />
 
           {/* <View style={reusable.rowWithSpace("space-between")}>
             <ReusableText
@@ -194,7 +194,7 @@ const HotelDetails = ({ navigation }) => {
               textColor={COLORS.white}
             />
           </View>
-          <HeightSpacer height={20} />
+          <HeightSpacer height={30} />
         </View>
       </View>
     </ScrollView>
