@@ -89,6 +89,11 @@ export default function App() {
           component={HotelSearch}
           options={{ headerShown: false }}
         />
+        <Stack.Screen
+          name="SelectRoom"
+          component={SelectRoom}
+          options={{ headerShown: false }}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );

@@ -101,6 +101,7 @@ const CountryDetails = ({ navigation }) => {
           </View>
 
           <PopularList data={country.popular} />
+
           <ReusableBtn
             onPress={() => navigation.navigate("HotelSearch")}
             btnText={"Find Best Hotels"}
