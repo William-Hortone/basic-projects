@@ -15,7 +15,7 @@ import HotelSearch from "./search/HotelSearch";
 import SelectRoom from "./Details/SelectRoom";
 import TopBooking from "./top/TopBooking";
 import TopTrips from "./top/TopTrips";
-// import TopInfos from "./top/TopInfos";
+import TopInfos from "./top/TopInfos";
 
 export {
   Home,
@@ -35,5 +35,5 @@ export {
   SelectRoom,
   TopBooking,
   TopTrips,
-  // TopInfos,
+  TopInfos,
 };
