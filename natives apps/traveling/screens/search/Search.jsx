@@ -17,7 +17,7 @@ import { AppBar, HeightSpacer, ReusableTile } from "../../components";
 
 const Search = ({ navigation }) => {
   const [searchKey, setSearchKey] = useState("");
-  const [searchResult, setSearchResult] = useState(["df"]);
+  const [searchResult, setSearchResult] = useState([]);
   const search = [
     {
       _id: "64c631650298a05640539adc",
