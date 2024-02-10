@@ -23,6 +23,7 @@
     "expo": "~49.0.6",
     "expo-blur": "~12.4.1",
     "expo-font": "~11.4.0",
+    "expo-linear-gradient": "~12.3.0",
     "expo-location": "~16.1.0",
     "expo-splash-screen": "~0.20.5",
     "expo-status-bar": "~1.6.0",
@@ -32,7 +33,7 @@
     "react-native-bouncy-checkbox": "^3.0.7",
     "react-native-maps": "1.7.1",
     "react-native-onboarding-swiper": "^1.2.0",
-    "react-native-pager-view": "6.2.0",
+    "react-native-pager-view": "^6.2.0",
     "react-native-paper": "^5.9.1",
     "react-native-safe-area-context": "4.6.3",
     "react-native-screens": "~3.22.0",
@@ -40,8 +41,7 @@
     "react-native-stock-star-rating": "^1.0.6",
     "react-native-tab-view": "^3.5.2",
     "react-native-vector-icons": "^10.0.0",
-    "yup": "^1.2.0",
-    "expo-linear-gradient": "~12.3.0"
+    "yup": "^1.2.0"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0"

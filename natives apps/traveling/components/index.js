@@ -13,6 +13,8 @@ import AppBar from "./reusable/AppBar";
 import DescriptionText from "./reusable/DescriptionText";
 import PopularList from "./country/PopularList";
 import HotelMap from "./tiles/hotel/HotelMap";
+import ReviewTile from "./tiles/reviews/ReviewTile";
+import ReviewsList from "./tiles/hotel/ReviewsList";
 
 export {
   ReusableText,
@@ -30,4 +32,8 @@ export {
   DescriptionText,
   PopularList,
   HotelMap,
+  ReviewTile,
+  ReviewsList,
+  // NetworkImages,
+
 };

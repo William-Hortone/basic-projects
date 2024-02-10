@@ -6,7 +6,9 @@ import {
   HeightSpacer,
   HotelMap,
   NetworkImage,
+  ReusableBtn,
   ReusableText,
+  ReviewsList,
 } from "../../components";
 import styles from "./hotelDetails.styles";
 import { COLORS, SIZES } from "../../constants";
@@ -14,7 +16,7 @@ import reusable from "../../components/reusable/reusable.style";
 import { Rating } from "react-native-stock-star-rating";
 import { Feather } from "@expo/vector-icons";
 
-const HotelDetails = () => {
+const HotelDetails = ({ navigation }) => {
   const hotel = {
     availability: {
       start: "2023-08-20T00:00:00.000Z",
@@ -55,7 +57,9 @@ const HotelDetails = () => {
   };
   return (
     <ScrollView>
-      <View style={{ height: 80 }}>
+      <HeightSpacer height={20} />
+
+      <View style={{ height: 60 }}>
         <AppBar
           title={hotel.title}
           color={COLORS.white}
@@ -146,8 +150,9 @@ const HotelDetails = () => {
           />
 
           <HotelMap coordinates={coordinates} />
+          <HeightSpacer height={30} />
 
-          <View style={reusable.rowWithSpace("space-between")}>
+          {/* <View style={reusable.rowWithSpace("space-between")}>
             <ReusableText
               text={"Reviews"}
               family={"regular"}
@@ -158,7 +163,38 @@ const HotelDetails = () => {
             <TouchableOpacity>
               <Feather name="list" size={20} />
             </TouchableOpacity>
+          </View> */}
+
+          {/* The review section */}
+          {/* <ReviewsList /> */}
+
+          <View style={reusable.rowWithSpace("space-between")}>
+            <View>
+              <ReusableText
+                text={`\$ ${hotel.price}`}
+                family={"medium"}
+                size={SIZES.large}
+                color={COLORS.black}
+              />
+              <ReusableText
+                text={"Jan 10 2024"}
+                family={"medium"}
+                size={SIZES.medium}
+                color={COLORS.gray}
+              />
+            </View>
+
+            <ReusableBtn
+              onPress={() => navigation.navigate("SelectRoom")}
+              btnText={"Select Room"}
+              width={(SIZES.width - 50) / 2.2}
+              bgColor={COLORS.green}
+              borderColor={COLORS.green}
+              borderWidth={0}
+              textColor={COLORS.white}
+            />
           </View>
+          <HeightSpacer height={30} />
         </View>
       </View>
     </ScrollView>
