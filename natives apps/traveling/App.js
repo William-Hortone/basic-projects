@@ -18,6 +18,7 @@ import {
   Recommended,
   Search,
   SelectRoom,
+  SelectedRoom,
   Settings,
   TopInfos,
 } from "./screens";
@@ -107,6 +108,11 @@ export default function App() {
         <Stack.Screen
           name="Settings"
           component={Settings}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="SelectedRoom"
+          component={SelectedRoom}
           options={{ headerShown: false }}
         />
       </Stack.Navigator>
