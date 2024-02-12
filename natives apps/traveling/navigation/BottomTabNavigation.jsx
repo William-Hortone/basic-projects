@@ -4,6 +4,7 @@ import React from "react";
 import { COLORS } from "../constants";
 import { Chat, Home, Location } from "../screens";
 import TopTab from "./TopTab";
+import AuthTab from "./AuthTab";
 
 const Tab = createBottomTabNavigator();
 const tabBarStyle = {
@@ -46,7 +47,7 @@ const BottomTabNavigation = () => {
       />
       <Tab.Screen
         name="Chat"
-        component={Chat}
+        component={AuthTab}
         options={{
           tabBarStyle: tabBarStyle,
           tabBarShowLabel: false,

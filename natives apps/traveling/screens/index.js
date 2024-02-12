@@ -20,6 +20,8 @@ import Settings from "./settings/Settings";
 import Payments from "./profile/Payments";
 import Successful from "./Bookings/Successful";
 import Failed from "./Bookings/Failed";
+import Registration from "./authentication/Registration";
+import SignIn from "./authentication/SignIn";
 
 export {
   Home,
@@ -44,4 +46,6 @@ export {
   Payments,
   Successful,
   Failed,
+  Registration,
+  SignIn,
 };
