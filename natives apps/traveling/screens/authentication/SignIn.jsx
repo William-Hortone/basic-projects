@@ -3,9 +3,9 @@ import React, { useState } from "react";
 import styles from "./signIn.style";
 import { Formik } from "formik";
 import * as Yup from "yup";
-import { COLORS } from "../../constants";
+import { COLORS, SIZES } from "../../constants";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
-import { ReusableBtn, WidthSpacer } from "../../components";
+import { HeightSpacer, ReusableBtn, WidthSpacer } from "../../components";
 
 const validationSchema = Yup.object().shape({
   password: Yup.string()
@@ -13,7 +13,7 @@ const validationSchema = Yup.object().shape({
     .required("required"),
   email: Yup.string()
     .email("Provide a valid email address")
-    .require("required"),
+    .required("required"),
 });
 
 const SignIn = () => {
@@ -23,10 +23,12 @@ const SignIn = () => {
 
   return (
     <View style={styles.container}>
+      <HeightSpacer height={20} />
+
       <Formik
         initialValues={{ email: "", password: "" }}
         validationSchema={validationSchema}
-        onSubmit={(value) => {}}
+        onSubmit={(value) => console.log(value)}
       >
         {({
           handleChange,
@@ -57,17 +59,19 @@ const SignIn = () => {
                     placeholder="Enter your Email"
                     onFocus={() => setFieldTouched("email")}
                     onBlur={() => setFieldTouched("email", "")}
-                    values={values.email}
+                    value={values.email}
                     autoCapitalize="none"
                     autoCorrect={false}
                     style={{ flex: 1 }}
                   />
-                  {touched.email && errors.email && (
-                    <Text style={styles.errorMessage}>{errors.email}</Text>
-                  )}
                 </View>
+                {touched.email && errors.email && (
+                  <Text style={styles.errorMessage}>{errors.email}</Text>
+                )}
               </View>
             </View>
+
+            <HeightSpacer height={20} />
 
             <View style={styles.wrapper}>
               <Text style={styles.label}>Password :</Text>
@@ -78,7 +82,7 @@ const SignIn = () => {
                   )}
                 >
                   <MaterialCommunityIcons
-                    name="password-outline"
+                    name="lock-outline"
                     size={20}
                     color={COLORS.gray}
                   />
@@ -90,7 +94,7 @@ const SignIn = () => {
                     onFocus={() => setFieldTouched("password")}
                     onBlur={() => setFieldTouched("password", "")}
                     onChangeText={handleChange("password")}
-                    values={values.password}
+                    value={values.password}
                     autoCapitalize="none"
                     autoCorrect={false}
                     style={{ flex: 1 }}
@@ -104,18 +108,17 @@ const SignIn = () => {
                       color={COLORS.gray}
                     />
                   </TouchableOpacity>
-
-                  {touched.password && errors.password && (
-                    <Text style={styles.errorMessage}>{errors.password}</Text>
-                  )}
                 </View>
+                {touched.password && errors.password && (
+                  <Text style={styles.errorMessage}>{errors.password}</Text>
+                )}
               </View>
             </View>
 
-            <WidthSpacer width={20} />
+            <HeightSpacer height={20} />
 
             <ReusableBtn
-              onPress={() => {}}
+              onPress={handleSubmit}
               btnText={"SIGN IN"}
               width={SIZES.width - 40}
               bgColor={COLORS.green}
