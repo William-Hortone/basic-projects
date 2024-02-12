@@ -11,7 +11,7 @@ import { Registration, SignIn } from "../screens";
 import { NetworkImage } from "../components";
 
 const AuthTab = () => {
-  const [activeTab, setActiveTab] = useState("Registration");
+  const [activeTab, setActiveTab] = useState("SignIn");
 
   const renderTab = (tabName) => (
     <TouchableOpacity
@@ -51,13 +51,13 @@ const AuthTab = () => {
         <View style={{ height: 600 }}>
           {/* The top bar navigation */}
           <View style={styles.tabContainer}>
-            <View style={styles.tabContent}>{renderTab("Registration")}</View>
             <View style={styles.tabContent}>{renderTab("SignIn")}</View>
+            <View style={styles.tabContent}>{renderTab("Registration")}</View>
           </View>
           {/* Render content based on activeTab */}
 
-          {activeTab === "Registration" && <Registration />}
           {activeTab === "SignIn" && <SignIn />}
+          {activeTab === "Registration" && <Registration />}
         </View>
       </ScrollView>
     </View>
