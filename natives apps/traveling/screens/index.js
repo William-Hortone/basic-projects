@@ -15,7 +15,14 @@ import HotelSearch from "./search/HotelSearch";
 import SelectRoom from "./Details/SelectRoom";
 import TopBooking from "./top/TopBooking";
 import TopTrips from "./top/TopTrips";
-// import TopInfos from "./top/TopInfos";
+import TopInfos from "./top/TopInfos";
+import Settings from "./settings/Settings";
+import Payments from "./profile/Payments";
+import Successful from "./Bookings/Successful";
+import Failed from "./Bookings/Failed";
+import Registration from "./authentication/Registration";
+import SignIn from "./authentication/SignIn";
+import SelectedRoom from "./Details/SelectedRoom";
 
 export {
   Home,
@@ -35,5 +42,12 @@ export {
   SelectRoom,
   TopBooking,
   TopTrips,
-  // TopInfos,
+  TopInfos,
+  Settings,
+  Payments,
+  Successful,
+  Failed,
+  Registration,
+  SignIn,
+  SelectedRoom,
 };
