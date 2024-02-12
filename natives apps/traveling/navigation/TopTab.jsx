@@ -9,8 +9,10 @@ import {
   ReusableText,
 } from "../components";
 import styles from "./topTab.style";
+import { useNavigation } from "@react-navigation/native";
 
 const TopTab = () => {
+  const navigation = useNavigation();
   const [activeTab, setActiveTab] = useState("Bookings");
 
   const renderTab = (tabName) => (
@@ -99,9 +101,9 @@ const TopTab = () => {
         <View style={styles.tabContent}>{renderTab("Infos")}</View>
       </View>
       {/* Render content based on activeTab */}
-      {activeTab === "Bookings" && <TopBooking />}
-      {activeTab === "Trips" && <TopTrips />}
-      {activeTab === "Infos" && <TopInfos />}
+      {activeTab === "Bookings" && <TopBooking navigation={navigation} />}
+      {activeTab === "Trips" && <TopTrips navigation={navigation} />}
+      {activeTab === "Infos" && <TopInfos navigation={navigation} />}
     </View>
   );
 };

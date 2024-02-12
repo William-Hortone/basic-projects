@@ -16,6 +16,8 @@ import SelectRoom from "./Details/SelectRoom";
 import TopBooking from "./top/TopBooking";
 import TopTrips from "./top/TopTrips";
 import TopInfos from "./top/TopInfos";
+import Settings from "./settings/Settings";
+import Payments from "./profile/Payments";
 
 export {
   Home,
@@ -36,4 +38,6 @@ export {
   TopBooking,
   TopTrips,
   TopInfos,
+  Settings,
+  Payments,
 };
