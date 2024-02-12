@@ -26,36 +26,6 @@ const TopBooking = () => {
       rating: 4.8,
       review: "1452 Reviews",
     },
-    {
-      _id: "64d09e3f364e1c37c8b4b13c",
-      country_id: "64c62bfc65af9f8c969a8d04",
-      location: "Bacelone, Spain",
-      title: "Golden Gate Bridge",
-      imageUrl:
-        "https://www.usatoday.com/gcdn/-mm-/05b227ad5b8ad4e9dcb53af4f31d7fbdb7fa901b/c=0-64-2119-1259/local/-/media/USATODAY/USATODAY/2014/08/13/1407953244000-177513283.jpg",
-      rating: 4.6,
-      review: "2145 Reviews",
-    },
-    {
-      _id: "64d09f90364e1c37c8b4b140",
-      country_id: "64c62bfc65af9f8c969a8d04",
-      location: "NewYork, U.S.A",
-      title: "Yellowstone National Park",
-      imageUrl:
-        "https://images.pexels.com/photos/258154/pexels-photo-258154.jpeg?cs=srgb&dl=pexels-pixabay-258154.jpg&fm=jpg",
-      rating: 4.8,
-      review: "24455 Reviews",
-    },
-    {
-      _id: "64d30f789d008909fa8b7ce5",
-      country_id: "64d2fd32618522e2fb342eec",
-      location: "Libreville, Gabon",
-      imageUrl:
-        "https://www.usatoday.com/gcdn/-mm-/05b227ad5b8ad4e9dcb53af4f31d7fbdb7fa901b/c=0-64-2119-1259/local/-/media/USATODAY/USATODAY/2014/08/13/1407953244000-177513283.jpg",
-      title: "Yellowstone National Park",
-      rating: 4.8,
-      review: "24455 Reviews",
-    },
   ];
   return (
     <View style={{ margin: 20 }}>
