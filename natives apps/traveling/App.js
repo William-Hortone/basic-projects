@@ -8,6 +8,7 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import {
   Cart,
   CountryDetails,
+  Failed,
   Home,
   HotelDetails,
   HotelSearch,
@@ -20,6 +21,7 @@ import {
   SelectRoom,
   SelectedRoom,
   Settings,
+  Successful,
   TopInfos,
 } from "./screens";
 import BottomTabNavigation from "./navigation/BottomTabNavigation";
@@ -113,6 +115,16 @@ export default function App() {
         <Stack.Screen
           name="SelectedRoom"
           component={SelectedRoom}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="Success"
+          component={Successful}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="Fail"
+          component={Failed}
           options={{ headerShown: false }}
         />
       </Stack.Navigator>

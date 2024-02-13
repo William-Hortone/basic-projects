@@ -89,7 +89,7 @@ const SelectRoom = ({ navigation }) => {
 
               <View style={styles.btnStyle}>
                 <ReusableBtn
-                  onPress={() => navigation.navigate("SelectedRoom", { item })}
+                  onPress={() => navigation.navigate("SelectedRoom", item)}
                   btnText={"Select Room"}
                   width={SIZES.width - 50}
                   bgColor={COLORS.green}
