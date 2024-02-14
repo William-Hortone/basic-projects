@@ -2,8 +2,11 @@ const User = require("../models/User");
 
 module.exports = {
   deleteUser: async (req, res, next) => {
+    const user_id = req.params.id;
+    console.log("deleteUser", user_id);
+
     try {
-      await User.findByIdAndDelete(req.user.id);
+      await User.findByIdAndDelete({ _id: user_id });
 
       res
         .status(200)
@@ -14,12 +17,13 @@ module.exports = {
   },
 
   getUser: (req, res, next) => {
-    const user_id = req.user.id;
+    const user_id = req.params.id;
+    console.log("getUser", user_id);
 
     try {
       const user = User.findById(
-        { user_id },
-        { password: 0, _v: 0, createdAt: 0, updatedAt: 0 }
+        { _id: user_id }
+        // { password: 0, _v: 0, createdAt: 0, updatedAt: 0 }
       );
 
       if (!user) {
