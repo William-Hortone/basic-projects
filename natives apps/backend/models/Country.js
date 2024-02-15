@@ -21,7 +21,7 @@ const CountrySchema = new mongoose.Schema(
     popular: [
       {
         type: mongoose.Schema.Types.ObjectId,
-        ref: "Place",
+        ref: "Places",
       },
     ],
   },

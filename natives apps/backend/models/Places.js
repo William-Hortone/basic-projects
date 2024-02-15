@@ -49,4 +49,4 @@ const PlaceSchema = new mongoose.Schema(
   { timestamps: true }
 );
 
-module.exports = mongoose.model("Place", PlaceSchema);
+module.exports = mongoose.model("Places", PlaceSchema);
