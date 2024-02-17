@@ -49,8 +49,35 @@ module.exports = {
     const placeId = req.params.id;
 
     try {
-      const place = await Place.findById({ _id: placeId });
+      const place = await Place.findById(
+        { _id: placeId },
+        { createdAt: 0, updatedAt: 0, _v: 0 }
+      ).popular({
+        path: "popular",
+        select: "title rating review imageUrl location",
+      });
       res.status(200).json({ place });
+    } catch (error) {
+      return next(error);
+    }
+  },
+
+  search: async (req, res, next) => {
+    try {
+      const results = await Place.aggregate([
+        {
+          $search: {
+            index: "places",
+            text: {
+              query: req.params.key,
+              path: {
+                wildcard: "*",
+              },
+            },
+          },
+        },
+      ]);
+      res.status(200).json(results);
     } catch (error) {
       return next(error);
     }
