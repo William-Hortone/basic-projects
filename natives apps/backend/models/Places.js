@@ -42,7 +42,7 @@ const PlaceSchema = new mongoose.Schema(
     popular: [
       {
         type: mongoose.Schema.Types.ObjectId,
-        ref: "Hotel",
+        ref: "Hotels",
       },
     ],
   },

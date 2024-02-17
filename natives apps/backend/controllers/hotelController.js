@@ -56,6 +56,10 @@ module.exports = {
 
     try {
       const hotel = await Hotel.findById({ _id: hotelId });
+      //   .popular({
+      //     path: "popular",
+      //     select: "title rating review imageUrl location",
+      //   });
 
       if (!hotel) {
         return res
