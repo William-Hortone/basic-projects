@@ -51,10 +51,7 @@ module.exports = {
   getCountries: async (req, res, next) => {
     // To find also county, _id and imageUrl
     try {
-      const countries = await Country.find(
-        {},
-        { country: 1, _id: 1, imageUrl: 1 }
-      );
+      const countries = await Country.find();
 
       res.status(200).json({ countries });
     } catch (error) {

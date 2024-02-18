@@ -36,10 +36,9 @@ module.exports = {
   },
   getPlaces: async (req, res, next) => {
     try {
-      const places = await Place.find(
-        {},
-        { _id: 1, review: 1, rating: 1, imageUrl: 1, title: 1, country_id: 1 }
-      );
+      const places = await Place.find();
+      // {},
+      // { _id: 1, review: 1, rating: 1, imageUrl: 1, title: 1, country_id: 1 }
       res.status(200).json({ places });
     } catch (error) {
       return next(error);

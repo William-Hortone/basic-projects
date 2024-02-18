@@ -2,7 +2,7 @@ import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View } from "react-native";
 import { useFonts } from "expo-font";
 import * as SplashScreen from "expo-splash-screen";
-import { useCallback } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import {
@@ -23,6 +23,8 @@ import {
   TopInfos,
 } from "./screens";
 import BottomTabNavigation from "./navigation/BottomTabNavigation";
+import axios from "axios";
+import fetchCountries from "./hook/fetchCountries";
 
 const Stack = createNativeStackNavigator();
 
@@ -35,16 +37,72 @@ export default function App() {
     extrabold: require("./assets/fonts/xtrabold.otf"),
   });
 
+  // const [data, setData] = useState(null);
+  // const [isLoading, setIsLoading] = useState(false);
+  // const [error, setError] = useState(null);
+
+  // useEffect(() => {
+  //   const fetchData = () => {
+  //     setIsLoading(true);
+
+  //     axios
+  //       .get("http://localhost:5003/api/getCountries")
+  //       .then((res) => {
+  //         console.log("the data is", res.data);
+  //       })
+  //       .catch((err) => {
+  //         console.log("the err is", err);
+  //       });
+
+  //     // setData(response.data);
+
+  //     // setIsLoading(false);
+  //   };
+
+  //   fetchData();
+  // }, []);
+
+  // if (isLoading) {
+  //   return <div>Loading...</div>;
+  // }
+
+  // if (error) {
+  //   return <div>Error: {error.message}</div>;
+  // }
+
+  // if (!data) {
+  //   return null;
+  // }
+
+  // const { countries, isLoading, error, refetchData } = fetchCountries();
+  // console.log("lets see", countries);
+
   const onLayoutRootView = useCallback(async () => {
     if (fontsLoader) {
       await SplashScreen.hideAsync();
     }
   }, [fontsLoader]);
 
+  // const fetchNewData = async () => {
+  //   try {
+  //     const res = await axios.get("http://localhost:5003/api/getCountries");
+  //     console.log("The data are here", res.data);
+  //     // toast.success("Updated successfully");
+  //   } catch (err) {
+  //     console.error("Error fetching data:", err);
+  //   }
+  // };
+
+  // useEffect(() => {
+  //   fetchNewData();
+  // }, []);
+
   if (!fontsLoader) {
     return null;
   }
+
   console.log("fontsLoader:", fontsLoader);
+  // console.log("fontsLoader:", fontsLoader);
 
   return (
     <NavigationContainer>
