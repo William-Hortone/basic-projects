@@ -7,18 +7,23 @@ import {
   ReusableTile,
 } from "../../components";
 import { COLORS, SIZES } from "../../constants";
+import { useRoute } from "@react-navigation/native";
 
 const Successful = ({ navigation }) => {
-  const hotel = {
-    _id: "64c631650298a05640539adc",
-    country_id: "64c62bfc65af9f8c969a8d04",
-    title: "Walt Disney World",
-    location: "NewYork, U.S.A",
-    imageUrl:
-      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2a/98/5c/37/hotel-exterior.jpg?w=1200&h=-1&s=1",
-    rating: 4.7,
-    review: "1204 Reviews",
-  };
+  const router = useRoute();
+
+  const item = router.params;
+  console.log("success", item);
+  // const hotel = {
+  //   _id: "64c631650298a05640539adc",
+  //   country_id: "64c62bfc65af9f8c969a8d04",
+  //   title: "Walt Disney World",
+  //   location: "NewYork, U.S.A",
+  //   imageUrl:
+  //     "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2a/98/5c/37/hotel-exterior.jpg?w=1200&h=-1&s=1",
+  //   rating: 4.7,
+  //   review: "1204 Reviews",
+  // };
 
   return (
     <View>
@@ -52,7 +57,7 @@ const Successful = ({ navigation }) => {
           />
           <HeightSpacer height={20} />
 
-          <ReusableTile item={hotel} />
+          <ReusableTile item={item} />
 
           <HeightSpacer height={20} />
 

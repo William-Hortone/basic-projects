@@ -6,7 +6,8 @@ import { useCallback } from "react";
 import { StyleSheet } from "react-native";
 import BottomTabNavigation from "./navigation/BottomTabNavigation";
 import {
-  CountryDetails,
+  Failed,
+  Home,
   HotelDetails,
   HotelSearch,
   HotelsList,
@@ -18,6 +19,8 @@ import {
   SelectRoom,
   SelectedRoom,
   Settings,
+  Successful,
+  TopInfos,
 } from "./screens";
 
 const Stack = createNativeStackNavigator();
@@ -110,6 +113,16 @@ export default function App() {
         <Stack.Screen
           name="SelectedRoom"
           component={SelectedRoom}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="Success"
+          component={Successful}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="Fail"
+          component={Failed}
           options={{ headerShown: false }}
         />
       </Stack.Navigator>
