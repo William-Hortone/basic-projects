@@ -24,6 +24,7 @@ const ReusableTile = ({ item, onPress }) => {
             family={"medium"}
             size={SIZES.medium}
             color={COLORS.black}
+            maxLength={20}
           />
           <WidthSpacer width={8} />
 
