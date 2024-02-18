@@ -7,6 +7,7 @@ const authRouter = require("./routes/auth");
 const userRouter = require("./routes/user");
 const countryRouter = require("./routes/country");
 const placeRouter = require("./routes/place");
+const hotelRouter = require("./routes/hotel");
 
 const port = 3000;
 
@@ -26,6 +27,7 @@ app.use("/api/", authRouter);
 app.use("/api/users/", userRouter);
 app.use("/api/", countryRouter);
 app.use("/api/", placeRouter);
+app.use("/api/", hotelRouter);
 
 app.get("/", (req, res) => res.send("Hello World!"));
 app.listen(process.env.PORT || port, () =>

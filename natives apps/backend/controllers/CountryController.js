@@ -21,15 +21,37 @@ module.exports = {
     }
   },
 
-  addPLacesToCountry: async (req, res, next) => {},
+  //! must be to check
+  addPLacesToCountry: async (req, res, next) => {
+    const { countryId, placeId } = req.body;
+
+    try {
+      const country = await Country.findById(countryId);
+
+      if (!country) {
+        return res
+          .status(40)
+          .json({ status: false, message: "Country not found" });
+      }
+
+      const index = country.popular.indexOf(placeId);
+      if (index !== -1) {
+        country.popular.splice(index, 1);
+      } else {
+        country.popular.push(placeId);
+      }
+      await country.save();
+
+      res.status(200).json({ status: true });
+    } catch (error) {
+      return next(error);
+    }
+  },
 
   getCountries: async (req, res, next) => {
     // To find also county, _id and imageUrl
     try {
-      const countries = await Country.find(
-        {},
-        { country: 1, _id: 1, imageUrl: 1 }
-      );
+      const countries = await Country.find();
 
       res.status(200).json({ countries });
     } catch (error) {
