@@ -1,10 +1,9 @@
-import { Text, View, VirtualizedList, ActivityIndicator } from "react-native";
-import React, { Component, useEffect, useState } from "react";
-import HeightSpacer from "../../reusable/HeightSpacer";
+import React from "react";
+import { ActivityIndicator, Text, View, VirtualizedList } from "react-native";
 import { COLORS, SIZES } from "../../../constants";
-import Country from "../../country/Country";
 import fetchCountries from "../../../hook/fetchCountries";
-// import getPlaces from "../../../hook/fetchCountries";
+import Country from "../../country/Country";
+import HeightSpacer from "../../reusable/HeightSpacer";
 
 const PLaces = () => {
   const { countries, isLoading, error } = fetchCountries();
@@ -66,26 +65,6 @@ const PLaces = () => {
   // if (!countries) {
   //   return <Text>No countries available</Text>;
   // }
-
-  // const [countries, setPlaces] = useState([]);
-  // const [isLoading, setIsLoading] = useState(true);
-  // const [error, setError] = useState(null);
-
-  // useEffect(() => {
-  //   const fetchData = async () => {
-  //     setIsLoading(true);
-  //     try {
-  //       const fetchedPlaces = await getPlaces();
-  //       console.log("fetchedPlaces", fetchedPlaces);
-  //       setPlaces(fetchedPlaces);
-  //     } catch (error) {
-  //       setError(error);
-  //     }
-  //     setIsLoading(false);
-  //   };
-
-  //   fetchData();
-  // }, []);
 
   if (isLoading) {
     return <ActivityIndicator color={COLORS.green} size={SIZES.xLarge} />;

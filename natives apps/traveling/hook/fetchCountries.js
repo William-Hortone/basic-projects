@@ -13,11 +13,6 @@ const fetchCountries = () => {
       const response = await axios.get("http://10.0.2.2:5003/api/getCountries");
 
       console.log("Successfully fetched countries:", response);
-      console.log("Successfully fetched data:", response.countries);
-      console.log(
-        "Successfully fetched data.countries:",
-        response.data.countries
-      );
 
       setCountries(response.data.countries);
 
@@ -43,23 +38,3 @@ const fetchCountries = () => {
 };
 
 export default fetchCountries;
-
-// import axios from "axios";
-
-// const getPlaces = async () => {
-//   try {
-//     const response = await fetch("http://10.0.2.2:5003/api/getCountries");
-
-//     if (!response.ok) {
-//       throw new Error("Failed to fetch places");
-//     }
-//     const data = await response.json();
-//     console.log("the daaataaa", data);
-//     return data.countries; // Assuming your API returns places in the 'places' key
-//   } catch (error) {
-//     console.error("Error fetching places:", error);
-//     throw error;
-//   }
-// };
-
-// export default getPlaces;

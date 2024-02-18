@@ -8,19 +8,13 @@ import {
   View,
 } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
-import {
-  AppBar,
-  HeightSpacer,
-  HotelCard,
-  ReusableTile,
-} from "../../components";
-import reusable from "../../components/reusable/reusable.style";
+import { AppBar, HeightSpacer, HotelCard } from "../../components";
 import { COLORS } from "../../constants";
 import styles from "./search.style";
 
 const HotelSearch = ({ navigation }) => {
   const [searchKey, setSearchKey] = useState("");
-  const [searchResult, setSearchResult] = useState(["d"]);
+  const [searchResult, setSearchResult] = useState([]);
   const hotels = [
     {
       _id: "64c631650298a05640539adc",
@@ -73,6 +67,7 @@ const HotelSearch = ({ navigation }) => {
       review: "24455 Reviews",
     },
   ];
+
   return (
     <SafeAreaView>
       <View style={{ height: 70 }}>
